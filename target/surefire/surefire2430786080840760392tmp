@@ -1,0 +1,6 @@
+#surefire
+#Wed Sep 09 20:40:53 IST 2020
+application.properties.file=resources/application.properties
+user.dir=C\:\\Users\\Admin\\workspace\\automationpractice_ecommerce
+localRepository=C\:\\Users\\Admin\\.m2\\repository
+basedir=C\:\\Users\\Admin\\workspace\\automationpractice_ecommerce

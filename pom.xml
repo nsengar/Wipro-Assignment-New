@@ -1,0 +1,98 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.asg</groupId>
+  <artifactId>automationpractice_ecommerce</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/test/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.6</version>
+                <configuration>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.9</version>
+                <configuration>
+                    <argLine>-Dfile.encoding=${project.build.sourceEncoding} -Dplatform=${platform} -Dapplication=${application} -Dlocale=${locale} -Dperfecto.capabilities.user=${perfectoUserName}</argLine>
+                    <systemPropertyVariables>
+                        <application.properties.file>resources/application.properties</application.properties.file>
+                     	<proxy>${proxy}</proxy>
+                    	<driver>${driver}</driver>
+                    	<input>${input}</input>
+                    	<output>${output}</output> 
+                    <!--	<proxy>http://proxy1.wipro.com</proxy>
+                    	<driver>C:\\Users\\Admin\\workspace\\automationpractice_ecommerce\\chromedriver.exe</driver>
+                    	<input>C:\\Users\\Admin\\workspace\\automationpractice_ecommerce\\InputFile.xlsx</input>
+                    	<output>C:\\Users\\Admin\\workspace\\automationpractice_ecommerce\\OutputFile.xlsx</output> -->
+                    </systemPropertyVariables>
+
+                    <suiteXmlFiles>
+                        <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+   
+    <dependencies>
+       
+		<dependency>
+		    <groupId>org.seleniumhq.selenium</groupId>
+		    <artifactId>selenium-java</artifactId>
+		    <version>3.141.59</version>
+		</dependency>
+		<dependency>
+    		<groupId>org.apache.poi</groupId>
+    		<artifactId>poi</artifactId>
+   			 <version>3.17</version>
+		</dependency>
+       <dependency>
+    		<groupId>org.apache.poi</groupId>
+    		<artifactId>poi-ooxml</artifactId>
+   			 <version>3.17</version>
+		</dependency>
+		 <dependency>
+    		<groupId>org.apache.commons</groupId>
+    		<artifactId>commons-lang3</artifactId>
+   			 <version>3.9</version>
+		</dependency>
+		<dependency>
+    		<groupId>org.testng</groupId>
+    		<artifactId>testng</artifactId>
+    		<version>6.9.8</version>
+    		<scope>test</scope>
+		</dependency>
+		
+    </dependencies>
+    
+    
+</project>

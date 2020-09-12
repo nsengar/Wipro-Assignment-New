@@ -1,0 +1,10 @@
+#surefire
+#Sat Sep 12 18:56:39 IST 2020
+output=C\:\\\\Users\\\\Admin\\\\workspace\\\\automationpractice_ecommerce\\\\OutputFile.xlsx
+input=C\:\\\\Users\\\\Admin\\\\workspace\\\\automationpractice_ecommerce\\\\InputFile.xlsx
+application.properties.file=resources/application.properties
+user.dir=C\:\\Users\\Admin\\workspace\\automationpractice_ecommerce
+proxy=http\://proxy1.wipro.com
+localRepository=C\:\\Users\\Admin\\.m2\\repository
+driver=C\:\\\\Users\\\\Admin\\\\workspace\\\\automationpractice_ecommerce\\\\chromedriver.exe
+basedir=C\:\\Users\\Admin\\workspace\\automationpractice_ecommerce

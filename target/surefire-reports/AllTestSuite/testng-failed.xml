@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [AllTestSuite]">
+  <test name="MyAppTest(failed)">
+    <classes>
+      <class name="com.wipro.asg.tests.NewTest">
+        <methods>
+          <include name="teardownTest"/>
+          <include name="setupTest"/>
+          <include name="TC001" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.wipro.asg.tests.NewTest -->
+    </classes>
+  </test> <!-- MyAppTest(failed) -->
+</suite> <!-- Failed suite [AllTestSuite] -->

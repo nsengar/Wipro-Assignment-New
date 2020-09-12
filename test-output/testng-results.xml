@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="AllTestSuite" duration-ms="108" started-at="2020-09-04T11:02:59Z" finished-at="2020-09-04T11:02:59Z">
+    <groups>
+    </groups>
+    <test name="MyAppTest" duration-ms="108" started-at="2020-09-04T11:02:59Z" finished-at="2020-09-04T11:02:59Z">
+      <class name="com.wipro.asg.tests.NewTest">
+        <test-method status="PASS" signature="f()[pri:0, instance:com.wipro.asg.tests.NewTest@573f2bb1]" name="f" duration-ms="30" started-at="2020-09-04T11:02:59Z" finished-at="2020-09-04T11:02:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- com.wipro.asg.tests.NewTest -->
+    </test> <!-- MyAppTest -->
+  </suite> <!-- AllTestSuite -->
+</testng-results>

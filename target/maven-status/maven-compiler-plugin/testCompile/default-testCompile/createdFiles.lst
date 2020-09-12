@@ -1,0 +1,5 @@
+com\wipro\asg\tests\NewTest.class
+com\wipro\asg\pages\AddCartPage.class
+com\wipro\asg\utils\ExcelUtils.class
+com\wipro\asg\pages\LoginPage.class
+com\wipro\asg\pages\ProductPage.class

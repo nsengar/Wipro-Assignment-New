@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="AllTestSuite" duration-ms="113729" started-at="2020-09-12T13:45:31Z" finished-at="2020-09-12T13:47:25Z">
+    <groups>
+    </groups>
+    <test name="MyAppTest" duration-ms="113729" started-at="2020-09-12T13:45:31Z" finished-at="2020-09-12T13:47:25Z">
+      <class name="com.wipro.asg.tests.NewTest">
+        <test-method status="PASS" signature="setupTest(java.lang.String, java.lang.String)[pri:0, instance:com.wipro.asg.tests.NewTest@3796751b]" name="setupTest" is-config="true" duration-ms="19402" started-at="2020-09-12T19:15:31Z" finished-at="2020-09-12T19:15:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://proxy1.wipro.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[C:\\Users\\Admin\\workspace\\automationpractice_ecommerce\\chromedriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method status="PASS" signature="TC001(java.lang.String, java.lang.String)[pri:0, instance:com.wipro.asg.tests.NewTest@3796751b]" name="TC001" duration-ms="92971" started-at="2020-09-12T19:15:51Z" finished-at="2020-09-12T19:17:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[C:\\Users\\Admin\\workspace\\automationpractice_ecommerce\\InputFile.xlsx]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[C:\\Users\\Admin\\workspace\\automationpractice_ecommerce\\OutputFile.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC001 -->
+        <test-method status="PASS" signature="teardownTest()[pri:0, instance:com.wipro.asg.tests.NewTest@3796751b]" name="teardownTest" is-config="true" duration-ms="1323" started-at="2020-09-12T19:17:24Z" finished-at="2020-09-12T19:17:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownTest -->
+      </class> <!-- com.wipro.asg.tests.NewTest -->
+    </test> <!-- MyAppTest -->
+  </suite> <!-- AllTestSuite -->
+</testng-results>
